@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golang Page</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <h2 class="todos-heading">Todos {{ range . }}</h2>
+       <span class="todo-id">{{ .Id }}</span> 
+       <span class="todo-taskname"> Task {{ .TaskName }}</span> 
+       <span class="date"> Date - {{ .DateTime.Date }}</span> 
+       <span class="time"> Time - {{ .DateTime.Time }}</span>
+    <br>
+    {{end}}
+    <br>
+    <form class="todo-form" action="/todo" method="post">
+        <label for="id">Id</label><br>
+        <input type="text" id="id" name="id" value="10"><br>
+        <label for="taskname">Task Name:</label><br>
+        <input type="text" id="taskname" name="taskname" placeholder="add tasks"><br><br>
+        <label for="date">Date:</label><br>
+        <input type="text" id="date" name = "date" ><br><br>
+        <label for="time">Time:</label><br>
+        <input type="text" id="time" name = "time" ><br><br>
+        <input type="submit" value="Submit">
+      </form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+}
+
+.todos-heading {
+    color: rgb(56, 45, 66);
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.todo-id {
+    margin-left: 300px;
+    font-size: 1.2vw;
+    font-weight: bold;
+    padding: 1px;
+    margin-top: 2px;
+}
+
+.todo-taskname {
+    font-size: 1.2vw;
+    padding: 1px;
+}
+
+.date {
+    font-size: 1.2vw;
+    padding: 1px;
+}
+
+.time {
+    font-size: 1.2vw;
+}
+
+.todo-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 1.2vw;
+    font-weight: bold;
+    padding: 2px;
+    margin: 2px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(69, 49, 88);
+    color: azure;
+    cursor: pointer;
+}
