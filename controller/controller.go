@@ -16,7 +16,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-const connection = "mongodb+srv://golang:i0LTJWR3CdvM52yR@mycluster.qdloke1.mongodb.net/?retryWrites=true&w=majority"
+const connection = "mongodb+srv://golang:<password>@mycluster.qdloke1.mongodb.net/?retryWrites=true&w=majority"
 
 const dbName = "golang_session"
 
